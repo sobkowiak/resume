@@ -1,0 +1,370 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Krzysztof}
+\familyname{Sobkowiak}
+\title{\vbox{\hbox{Senior Solution Architect @ Capgemini}\hbox{ JEE \& Open Source Architect}}}               % optional, remove the line if not wanted
+%\address{}    % optional, remove the line if not wanted
+\mobile{+48~516~129~507}                     % optional, remove the line if not wanted
+%\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{krzys.sobkowiak@gmail.com}                          % optional, remove the line if not wanted
+%\homepage{http://dev.sobkowiak.org}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+\photo[100pt][0.4pt]{images/kso}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{To be defeated and not submit, is victory; to be victorious and rest on one's laurels, is defeat. (Józef Piłsudski)}                 % optional, remove the line if not wanted
+
+%\renewcommand*{\titlefont}{\large\mdseries\slshape}
+
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Summary of Business \& Technical Skills \& Interests}
+{\small 
+\cvlistitem{JEE architecture, Java modularity and component based development (Spring, OSGi, AOP, EJB, QUASAR)}
+\cvlistitem{Open Source enthusiast \& system architect}
+\cvlistitem{Client/server communication}
+\cvlistitem{System integration (JAX-WS, JAXB, JMS), SOA, ESB (Oracle Service Bus, Apache~ServiceMix/FuseESB, Mule~ESB)}
+\cvlistitem{Persistence layer, database design, development and administration}
+\cvlistitem{Model driven development}
+\cvlistitem{Application lifecycle management}
+\cvlistitem{Professional documents preparation with \LaTeX{} \& DocBook}
+\cvlistitem{Linux/Unix system administration, Virtualuzation \& Cloud}
+\cvlistitem{Java Telephony API, Java--DCOM interoperability}
+}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{since 2005}{Senior Software Engineer / Technical Architect}{Capgemini Polska}{Wroclaw}{}{
+\begin{itemize}
+ \item Technical architect and software engineer in a wide variety of business applications from the logistic, transport and sales area, with professional experience in Java SE and JEE.
+ \item Particularly interested in:
+ \begin{itemize}
+    \item modularization and component based development (Spring, OSGi, EJB, AOP)
+    \item client/server communication
+    \item system integration (Web Services, JMS, ESB, SOA)
+    \item persistence
+    \item relational database design and development (Oracle DB)
+    \item model driven development
+  \end{itemize}
+  \item Team member of internal Capgemini trainings (\emph{Spring Introduction}, \emph{Spring Advanced}, \emph{OSGi}, \emph{Server Technologies}, \emph{Software Engineering \& Programming})
+  \item Team member of internal Capgemini communities (\emph{IT Architecture}, \emph{EAI}, \emph{Mobile})
+  \item Involved in recruitment activities
+\end{itemize}}
+\cventry{2002--2005}{Scientific Staff}{Brandenburg University of Technology}{Cottbus}{Chair of Programming Languages and Compiler Construction}{%
+\begin{itemize}
+ \item Research
+    \begin{itemize}
+      \item compiler construction
+      \item data flow computing
+    \end{itemize}
+ \item Academic assistant (programming languages, compiler construction)
+ \item Computer laboratory assistant (logic, fundamentals of computer science, software engineering, compiler construction)
+ \item Team lead and system designer for internal systems (usually student projects)
+ \item Linux/Unix system administrator
+\end{itemize}
+}
+
+\cventry{2001--2001}{Software Engineer}{Internet Designers}{Wroclaw}{}{Development of web applications based on content management systems}%
+
+\cventry{2000--2002}{Scientific Staff}{Wroclaw University of Technology}{Wroclaw}{Institute of Mathematics and Computer Science}{%
+\begin{itemize}
+ \item Research
+    \begin{itemize}
+      \item numerical methods
+      \item numerical methods in stochastic differential equations and stochastic optimal control
+    \end{itemize}
+ \item Computer laboratory assistant (numerical methods, \LaTeX, Matlab)
+\end{itemize}
+}
+
+
+
+%\subsection{Miscellaneous}
+
+\section{Projects}
+\subsection{Vocational}
+
+
+\cventry{since 2009}{TECBASE}{Capgemini Polska}{Wroclaw}{}{Internal project  to provide a common technical basis for multiple development projects for a big customer form the logistic area%
+ \begin{itemize}
+  \item Technologies: Java 6, JAXB, JAX-WS RI, JMS, sd\&m Quasar, Oracle Database 11g, Oracle RAC, Oracle WebLogic, Oracle Service Bus, Java-DCOM interoperability (j-interop), JTAPI 
+  \item Activities \& roles 
+  \begin{itemize}
+   \item software development and maintenance 
+   \item technical support for the customer's business projects (transport management systems),  integration of the technical basis with the projects, design and development of the new requirements
+   \item CTA of the messaging and document managemen subsystems
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{2008--2009}{***}{Capgemini Polska}{Wroclaw}{8 months}{Central booking and ticketing system for a major ferry operator%
+ \begin{itemize}
+  \item Technologies: Java 1.4.2, Oracle RAC (9i), Oracle Database 9i, Oracle Database 11g, Apache Axis 2,  Eclipse, SVN,  sd\&m Quasar, Database replication (Oracle), connecting to hardware pheriperials, Together Architect, Enterprise Architect, i18n, archiving
+  \item Activities \& roles 
+  \begin{itemize}
+   \item software development and maintenance 
+   \item development of the technical kernel of the system 
+   \item technical support
+   \item preparing the system for the upgrade to the newer technology stack (Java 6, Oracle 11g, MS~Windows~7, Apache CXF)
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{2008--2008}{***}{Capgemini Polska}{Wroclaw}{10 months}{Booking system for container port maintenance for a big customer from the logistic area%
+ \begin{itemize}
+  \item Technologies: Suse Linux Enterprise Edition 10, Oracle Database 10g, Java 6, JBoss 4.2.x, sd\&m Quasar (TecBase), J2EE5, J2ME Web Services (JSR-172), Eclipse, Enterprise Architect, Subversion, Maven, CruiseControl, Ant 
+  \item Activities \& roles 
+  \begin{itemize}
+   \item software development and maintenance 
+   \item development of the technical kernel of the system 
+   \item technical support (software development environment maintenance, build management)
+   \item replacement person for CTA.
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{2005--2007}{***}{Capgemini Polska}{Hamburg, Wroclaw}{32 months}{System for sale planning for a big customer from the logistic and sales area%
+ \begin{itemize}
+  \item Technologies: C\#, .NET Remoting, MS SQL Server, Versant Open Access OR-Mapper, Web Methods 
+  \item Activities \& roles 
+  \begin{itemize}
+   \item software development and maintenance 
+   \item development of the technical kernel of the system 
+   \item technical support (software development environment maintenance, build management)
+   \item replacement person for CTA.
+   \item team leader of the support team
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{2004--2004}{MoVerON}{Brandenburg University of Technology}{Cottbus}{8 months}{Web application for universities for modular management of courses.%
+ \begin{itemize}
+  \item Technologies: PHP, HTML, Sybase 
+  \item Activities \& roles 
+  \begin{itemize}
+   \item project designer \& project leader
+   \item technical support
+   \item integration with IT infrastructure of BTU
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{2002--2004}{LehVIS}{Brandenburg University of Technology}{Cottbus}{19 months}{System for management of students' participation in university activities (courses, exercises, laboratories).%
+ \begin{itemize}
+  \item Technologies: PHP, HTML, Sybase 
+  \item Activities \& roles 
+  \begin{itemize}
+   \item project designer \& project leader
+   \item technical support
+   \item integration with IT infrastructure of BTU
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{2001--2001}{Winiary.pl, Siemens.pl, Nestle.pl}{Internet Designers}{Wroclaw}{4 months}{Web applications based on CMS%
+ \begin{itemize}
+  \item Technologies: APS, CMS, MS SQL Server, HTML
+  \item Activities \& roles 
+  \begin{itemize}
+   \item ASP developer
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{2001--2001}{IDCMS}{Internet Designers}{Wroclaw}{1 month}{Core system for web applications%
+ \begin{itemize}
+  \item Technologies: Java, Servlets, JSP, XML
+  \item Activities \& roles 
+  \begin{itemize}
+   \item software developer
+  \end{itemize}
+ \end{itemize}
+}
+
+\subsection{Student projects}
+
+\cventry{2000--2001}{SDE Solver}{Wroclaw University of Technology}{Wroclaw}{6 months}{System for solving and analysis of stochastic differential equations.%
+ \begin{itemize}
+  \item Technologies: C++, C++ Builder
+  \item Activities \& roles 
+  \begin{itemize}
+   \item software designer and developer
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{2000--2001}{MiETEX}{Wroclaw University of Technology}{Wroclaw}{6 months}{Web application for operating of measure units in laboratory.%
+ \begin{itemize}
+  \item Technologies: C++, JAVA, CORBA, CGI
+  \item Activities \& roles 
+  \begin{itemize}
+   \item design and development of client/server communication with CORBA
+   \item technical support
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{2000--2000}{El Trader}{Wroclaw University of Technology}{Wroclaw}{4 months}{System for risk management on energy market.%
+ \begin{itemize}
+  \item Technologies: C++, C++ Builder
+  \item Activities \& roles 
+  \begin{itemize}
+   \item software designer and developer
+  \end{itemize}
+ \end{itemize}
+}
+
+\cventry{1999--2001}{Stock Market Simulator}{Wroclaw University of Technology}{Wroclaw}{22 months}{System simulating functionality of the Stock Market. The system enables other users to play on the Market with the help of client application.%
+ \begin{itemize}
+  \item Technologies: C++, C++ Builder, CORBA
+  \item Activities \& roles 
+  \begin{itemize}
+   \item software technical designer and developer
+   \item design and development of client/server communication with CORBA
+  \end{itemize}
+ \end{itemize}
+}
+
+
+\section{Education}
+\cventry{1996--2001}{M.Sc}{Wroclaw University of Technology}{Wroclaw}{Applied Mathematics}{%
+Study areas: 
+  \begin{itemize}
+    \item Theoretical Mathematics
+    \item Mathematical Aspects of Computer Science
+    \item Mathematical Statistics
+    \item Financial and Actuarial Mathematics  
+   \end{itemize}
+Research area: numerical methods in stochastic differential equations and stochastic optimal control
+Master thesis: \emph{Computer Approximation of the Stochastic Differential Equations with Respect to Semimartingales with Examples of theirs Applications}}  % arguments 3 to 6 can be left empty
+\cventry{1992--1996}{Secondary school}{I Liceum Ogólnokształcące}{Milicz}{}{}
+\cventry{1984--1992}{Primary school}{Szkoła Podstawowa im. Stanislawa Ratajczaka}{Szkaradowo}{}{}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Computer Approximation of Stochastic Differential Equations with Respect to Semimartingales with examples of theirs Applications}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Languages}
+\cvitemwithcomment{Polish}{mother tongue}{}
+\cvitemwithcomment{English}{intermediate}{}
+\cvitemwithcomment{German}{advanced}{}
+
+\section{Professional skills}
+{\small
+\cvitem{Methods}{UML, component based development, distributed processing, design patterns, object oriented methods}
+\cvitem{Progr. lang.}{Java, C++, C\#, Groovy, PHP, Bash, WLS}
+\cvitem{JEE standards \& frameworks}{Spring, OSGi, Hibernate, JPA, EJB, JSF, JSP, XSD, JAXB, JAXP, SOAP, JAX-WS, WSDL, JAX-WS~RI, Apache~CXF, Apache~Axis2, JAX-RS,  WebStart, AOP, AspectJ, JMS, Apache~ActiveMQ, QUASAR}
+\cvitem{Dev. tools}{Eclipse, Netbeans, Visual~Studio.NET, Monodeveloper, QT-Linguist, SQL~Developer}
+\cvitem{Databases}{Oracle DB 10g/11g, MySQL, PostgreSQL}
+\cvitem{Appl.\& web servers}{Oracle WebLogic, JBoss~AS, Tomcat, Jetty, Apache~Karaf, Apache~ServiceMix, FuseESB, Eclipse~Virgo, Apache~HTTP~Server}
+\cvitem{ESB \& SOA}{Apache~ServiceMix, FuseESB, Apache~Cellar, Fuse~Fabric, Apache~Camel, Mule~ESB, Oracle Service Bus}
+\cvitem{MDA}{EMF, Xtext}
+\cvitem{ALM}{Git, SVN, CVS, Maven, ANT, Sonatype~Tycho, Hudson/Jenkins, Artifactory, Nexus, CruiseControl}
+\cvitem{Op. systems}{LINUX (Debian, Ubuntu, Redhat), UNIX, MS~Windows}
+\cvitem{Other APIs \& libraries}{JTAPI (GJTAPI), j-Interop, FOP, J2ME Web Services (JSR-172), Handheld programming}
+\cvitem{Doc. prep.}{Vim, \LaTeX, DocBook, Libre~Office, MS~Office, Scribus}
+\cvitem{Graph. tools}{Gimp, Inkscape, Karbon, Blender}
+\cvitem{Vrit. \& cloud}{Virtual~Box, Amazon~EC2, CloudFoundry}
+\cvitem{Web hosting}{Parallels Plesk Panel, Drupal, Joomla, Wordpress}
+\cvitem{Scientific apps}{Matlab, Scilab, Maple, Octave}
+}
+
+
+
+\section{Hobbies \& interests}
+\cvlistitem{Mountains}
+\cvlistitem{Gothic rock music \& Gothic culture}
+\cvlistitem{Rowing}
+\cvlistitem{Programming for Children - Scratch, Alice}
+% 
+% 
+% \section{Extra 1}
+% \cvitem{hobby 1}{Description}
+% \cvitem{hobby 2}{Description}
+% \cvitem{hobby 3}{Description}
+% 
+% 
+% \renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+% 
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\nocite{*}
+\bibliographystyle{plain}
+%\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure{curriculum vit\ae{}}
+% \makelettertitle
+% 
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+% 
+% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+% 
+% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+% 
+% \makeletterclosing
+
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
