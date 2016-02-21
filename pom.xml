@@ -67,7 +67,7 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>target/site/pdf/cv.pdf</file>
+									<file>target/site/pdf/resume.pdf</file>
 									<type>pdf</type>
 								</artifact>
 							</artifacts>

@@ -20,13 +20,13 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{2.8cm}           % if you want to change the width of the column with the dates
 %\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \firstname{Krzysztof}
 \familyname{Sobkowiak}
-\title{\vbox{\hbox{Senior Solution Architect @ Capgemini}\hbox{ JEE \& Open Source Architect}}}               % optional, remove the line if not wanted
+\title{\large\vbox{\hbox{Senior Solution Architect @ Capgemini}\hbox{JEE/OSS/Integration Architect}\hbox{Apache Software Foundation member}}}               % optional, remove the line if not wanted
 %\address{}    % optional, remove the line if not wanted
 \mobile{+48~516~129~507}                     % optional, remove the line if not wanted
 %\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
@@ -35,7 +35,7 @@
 %\homepage{http://dev.sobkowiak.org}                    % optional, remove the line if not wanted
 %\extrainfo{additional information}            % optional, remove the line if not wanted
 \photo[100pt][0.4pt]{images/kso}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
-\quote{To be defeated and not submit, is victory; to be victorious and rest on one's laurels, is defeat. (Józef Piłsudski)}                 % optional, remove the line if not wanted
+%\quote{\normalsize To be defeated and not submit, is victory; to be victorious and rest on one's laurels, is defeat.}                 % optional, remove the line if not wanted
 
 %\renewcommand*{\titlefont}{\large\mdseries\slshape}
 
@@ -57,264 +57,297 @@
 \makecvtitle
 
 \section{Summary of Business \& Technical Skills \& Interests}
-{\small 
-\cvlistitem{JEE architecture, Java modularity and component based development (Spring, OSGi, AOP, EJB, QUASAR)}
-\cvlistitem{Open Source enthusiast \& system architect}
-\cvlistitem{Client/server communication}
-\cvlistitem{System integration (JAX-WS, JAXB, JMS), SOA, ESB (Oracle Service Bus, Apache~ServiceMix/FuseESB, Mule~ESB)}
-\cvlistitem{Persistence layer, database design, development and administration}
-\cvlistitem{Model driven development}
-\cvlistitem{Application lifecycle management}
-\cvlistitem{Professional documents preparation with \LaTeX{} \& DocBook}
-\cvlistitem{Linux/Unix system administration, Virtualuzation \& Cloud}
-\cvlistitem{Java Telephony API, Java--DCOM interoperability}
+{\small
+    \cvlistitem{JEE architecture, Java systems modularization, component based development (Spring, OSGi, AOP, EJB, QUASAR)}
+    \cvlistitem{System integration (JAX-WS, JAX-RS, JAXB, JMS), SOA, ESB}
+    \cvlistitem{Open Source enthusiast \& system architect}
+    \cvlistitem{Microservices architecture}
+    \cvlistitem{Linux/Unix system administration, Virtualuzation, Containers \& Cloud}
+    \cvlistitem{Application lifecycle management, DevOps}
+    \cvlistitem{Professional documents preparation with \LaTeX{}, Markdown, Asciidoc(tor) \& DocBook}
+    \cvlistitem{Teaching children programming and robotics}
 }
+
 
 \section{Experience}
 \subsection{Vocational}
-\cventry{since 2005}{Senior Software Engineer / Technical Architect}{Capgemini Polska}{Wroclaw}{}{
+\cventry{since 04/2005}{Senior Software Engineer / Senior Solution Architect}{Capgemini Polska}{Wroclaw}{}{
 \begin{itemize}
- \item Technical architect and software engineer in a wide variety of business applications from the logistic, transport and sales area, with professional experience in Java SE and JEE.
- \item Particularly interested in:
- \begin{itemize}
-    \item modularization and component based development (Spring, OSGi, EJB, AOP)
-    \item client/server communication
-    \item system integration (Web Services, JMS, ESB, SOA)
-    \item persistence
-    \item relational database design and development (Oracle DB)
-    \item model driven development
-  \end{itemize}
-  \item Team member of internal Capgemini trainings (\emph{Spring Introduction}, \emph{Spring Advanced}, \emph{OSGi}, \emph{Server Technologies}, \emph{Software Engineering \& Programming})
-  \item Team member of internal Capgemini communities (\emph{IT Architecture}, \emph{EAI}, \emph{Mobile})
-  \item Involved in recruitment activities
-\end{itemize}}
-\cventry{2002--2005}{Scientific Staff}{Brandenburg University of Technology}{Cottbus}{Chair of Programming Languages and Compiler Construction}{%
-\begin{itemize}
- \item Research
-    \begin{itemize}
-      \item compiler construction
-      \item data flow computing
-    \end{itemize}
- \item Academic assistant (programming languages, compiler construction)
- \item Computer laboratory assistant (logic, fundamentals of computer science, software engineering, compiler construction)
- \item Team lead and system designer for internal systems (usually student projects)
- \item Linux/Unix system administrator
+    \item Technical architect and software engineer in a wide variety of business applications from the logistic, transport and sales area
+    \item Research, developing generic technical/integration solutions for other projects
+    \item Trainer  (\emph{Spring}, \emph{OSGi}, \emph{Server Technologies}, \emph{Software Engineering \& Programming}, \emph{System architecture})
+    \item Involved in recruitment activities
 \end{itemize}
 }
-
-\cventry{2001--2001}{Software Engineer}{Internet Designers}{Wroclaw}{}{Development of web applications based on content management systems}%
-
-\cventry{2000--2002}{Scientific Staff}{Wroclaw University of Technology}{Wroclaw}{Institute of Mathematics and Computer Science}{%
+\cventry{02/2002 -- 03/2005}{Scientific Staff}{Brandenburg University of Technology}{Cottbus}{Chair of Programming Languages and Compiler Construction}{
 \begin{itemize}
- \item Research
+    \item Research
     \begin{itemize}
-      \item numerical methods
-      \item numerical methods in stochastic differential equations and stochastic optimal control
+        \item compiler construction
+        \item data flow computing
+     \end{itemize}
+     \item Academic assistant (programming languages, compiler construction)
+     \item Computer laboratory assistant (logic, fundamentals of computer science, software engineering, compiler construction)
+     \item Team lead and system designer for internal systems (usually student projects)
+     \item Linux/Unix system administrator
+ \end{itemize}   
+}
+\cventry{09/2001 -- 02/2002}{Scientific Staff}{Wroclaw University of Technology}{Wroclaw}{Institute of Mathematics and Computer Science}{
+\begin{itemize}
+    \item Research
+    \begin{itemize}
+        \item numerical methods
+        \item numerical methods in stochastic differential equations and stochastic optimal control
     \end{itemize}
- \item Computer laboratory assistant (numerical methods, \LaTeX, Matlab)
+    \item Computer laboratory assistant (numerical methods, \LaTeX, Matlab)
 \end{itemize}
+}
+\cventry{06/2001 -- 11/2001}{Software Engineer}{Internet Designers}{Wroclaw}{}{%
+    Development of web applications based on content management systems
+}%
+\subsection{Non-profit}
+\cventry{since 04/2014}{Commiter, PMC member/chair, ASF member}{The Apache Software Foundation}{}{}{%
+\begin{itemize}
+    \item contributor on Apache ServiceMix, Karaf, ActiveMQ, Camel, CXF projects (since 09/2013)
+    \item Apache ServiceMix commiter (since 04/2014)
+    \item Apache ServiceMix PMC member (since 07/2014)
+    \item Apache ServiceMix PMC chair (since 02/2015)
+    \item The Apache Software Foundation member (since 03/2015)
+\end{itemize}
+}
+\cventry{since 04/2014}{Co-Founder, Mentor, Trainer}{RoboCap.pl}{Wroclaw}{}{%
+   Programming and robotics workshops for children (Scratch, Sphero, App Inventor, LEGO Mindstorms, LeJOS, Arduino, MakeBlock, \ldots)
 }
 
 
 
-%\subsection{Miscellaneous}
+\section{Education}
+\cventry{1996 -- 2001}{M.Sc}{Wroclaw University of Technology}{Wroclaw}{Applied Mathematics}{%
+    Study areas: 
+    \begin{itemize}
+        \item Theoretical Mathematics
+        \item Mathematical Aspects of Computer Science
+        \item Mathematical Statistics
+        \item Financial and Actuarial Mathematics  
+    \end{itemize}
+    Research area: numerical methods in stochastic differential equations and stochastic optimal control
+    Master thesis: \emph{Computer Approximation of the Stochastic Differential Equations with Respect to Semimartingales with Examples of theirs Applications}}  % arguments 3 to 6 can be left empty
+%\cventry{1992--1996}{Secondary school}{I Liceum Ogólnokształcące}{Milicz}{}{}
+%\cventry{1984--1992}{Primary school}{Szkoła Podstawowa im. Stanislawa Ratajczaka}{Szkaradowo}{}{}
+
+
+\section{Certification}
+\cventry{04/2015}{Red Hat Accredited Professional}{Red Hat Delivery Specialist – Middleware Integration Services}{}{}{}
+\cventry{04/2015}{Red Hat Accredited Professional}{Red Hat Delivery Specialist – Middleware Middleware Migration}{}{}{}
+\cventry{03/2015}{Red Hat Accredited Professional}{Red Hat Delivery Specialist – Middleware Application Development}{}{}{}
+
+\section{Courses}
+\cvlistitem{Application Development with EAP 6 (E-LAB), Red Hat OPEN Program}
+\cvlistitem{Camel Development with Red Hat JBoss Fuse (VT, JB421R), Red Hat OPEN Program}
+\cvlistitem{Red Hat JBoss A-MQ (VT), Red Hat OPEN Program}
+\cvlistitem{Application Migration to EAP6 (E-LAB), Red Hat OPEN Program}
+\cvlistitem{Application Migration using Windup (E-LAB), Red Hat OPEN Program}
+\cvlistitem{Service Development with Fuse Service Works (E-LAB), Red Hat OPEN Program}
+\cvlistitem{MuleSoft.U Developer Essentials Certification Course}
+\cvlistitem{Oracle Database 11g: Performance Tuning DBA Release 2 at Oracle University}
+
+\filbreak
+\section{Talks}
+
+\cventry{30/11/2015}{Integrate (Yourself) with the Apache Software Foundation}{33rd Degree 4charity 2015}{Wroclaw}{}{}
+\cventry{23/04/2015}{Integrate (Yourself) with the Apache Software Foundation}{Open Source Day 2015}{Warszawa}{}{}
+
+
 
 \section{Projects}
 \subsection{Vocational}
 
 
 \cventry{since 2009}{TECBASE}{Capgemini Polska}{Wroclaw}{}{Internal project  to provide a common technical basis for multiple development projects for a big customer form the logistic area%
- \begin{itemize}
-  \item Technologies: Java 6, JAXB, JAX-WS RI, JMS, sd\&m Quasar, Oracle Database 11g, Oracle RAC, Oracle WebLogic, Oracle Service Bus, Java-DCOM interoperability (j-interop), JTAPI 
-  \item Activities \& roles 
-  \begin{itemize}
-   \item software development and maintenance 
-   \item technical support for the customer's business projects (transport management systems),  integration of the technical basis with the projects, design and development of the new requirements
-   \item CTA of the messaging and document managemen subsystems
-  \end{itemize}
- \end{itemize}
+%    \begin{itemize}
+%        \item Technologies: Java 6, JAXB, JAX-WS RI, JMS, sd\&m Quasar, Oracle Database 11g, Oracle RAC, Oracle WebLogic, Oracle Service Bus, Java-DCOM interoperability (j-interop), JTAPI 
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item software development and maintenance 
+%            \item technical support for the customer's business projects (transport management systems),  integration of the technical basis with the projects, design and development of the new requirements
+%            \item CTA of the messaging and document managemen subsystems
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{2008--2009}{***}{Capgemini Polska}{Wroclaw}{8 months}{Central booking and ticketing system for a major ferry operator%
- \begin{itemize}
-  \item Technologies: Java 1.4.2, Oracle RAC (9i), Oracle Database 9i, Oracle Database 11g, Apache Axis 2,  Eclipse, SVN,  sd\&m Quasar, Database replication (Oracle), connecting to hardware pheriperials, Together Architect, Enterprise Architect, i18n, archiving
-  \item Activities \& roles 
-  \begin{itemize}
-   \item software development and maintenance 
-   \item development of the technical kernel of the system 
-   \item technical support
-   \item preparing the system for the upgrade to the newer technology stack (Java 6, Oracle 11g, MS~Windows~7, Apache CXF)
-  \end{itemize}
- \end{itemize}
+\cventry{2008 -- 2009}{***}{Capgemini Polska}{Wroclaw}{8 months}{Central booking and ticketing system for a major ferry operator%
+%    \begin{itemize}
+%        \item Technologies: Java 1.4.2, Oracle RAC (9i), Oracle Database 9i, Oracle Database 11g, Apache Axis 2,  Eclipse, SVN,  sd\&m Quasar, Database replication (Oracle), connecting to hardware pheriperials, Together Architect, Enterprise Architect, i18n, archiving
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item software development and maintenance 
+%            \item development of the technical kernel of the system 
+%            \item technical support
+%            \item preparing the system for the upgrade to the newer technology stack (Java 6, Oracle 11g, MS~Windows~7, Apache CXF)
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{2008--2008}{***}{Capgemini Polska}{Wroclaw}{10 months}{Booking system for container port maintenance for a big customer from the logistic area%
- \begin{itemize}
-  \item Technologies: Suse Linux Enterprise Edition 10, Oracle Database 10g, Java 6, JBoss 4.2.x, sd\&m Quasar (TecBase), J2EE5, J2ME Web Services (JSR-172), Eclipse, Enterprise Architect, Subversion, Maven, CruiseControl, Ant 
-  \item Activities \& roles 
-  \begin{itemize}
-   \item software development and maintenance 
-   \item development of the technical kernel of the system 
-   \item technical support (software development environment maintenance, build management)
-   \item replacement person for CTA.
-  \end{itemize}
- \end{itemize}
+
+\cventry{2008 -- 2008}{***}{Capgemini Polska}{Wroclaw}{10 months}{Booking system for container port maintenance for a big customer from the logistic area%
+%    \begin{itemize}
+%        \item Technologies: Suse Linux Enterprise Edition 10, Oracle Database 10g, Java 6, JBoss 4.2.x, sd\&m Quasar (TecBase), J2EE5, J2ME Web Services (JSR-172), Eclipse, Enterprise Architect, Subversion, Maven, CruiseControl, Ant 
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item software development and maintenance 
+%            \item development of the technical kernel of the system 
+%            \item technical support (software development environment maintenance, build management)
+%            \item replacement person for CTA.
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{2005--2007}{***}{Capgemini Polska}{Hamburg, Wroclaw}{32 months}{System for sale planning for a big customer from the logistic and sales area%
- \begin{itemize}
-  \item Technologies: C\#, .NET Remoting, MS SQL Server, Versant Open Access OR-Mapper, Web Methods 
-  \item Activities \& roles 
-  \begin{itemize}
-   \item software development and maintenance 
-   \item development of the technical kernel of the system 
-   \item technical support (software development environment maintenance, build management)
-   \item replacement person for CTA.
-   \item team leader of the support team
-  \end{itemize}
- \end{itemize}
+\cventry{2005 -- 2007}{***}{Capgemini Polska}{Hamburg, Wroclaw}{32 months}{System for sale planning for a big customer from the logistic and sales area%
+%    \begin{itemize}
+%        \item Technologies: C\#, .NET Remoting, MS SQL Server, Versant Open Access OR-Mapper, Web Methods 
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item software development and maintenance 
+%            \item development of the technical kernel of the system 
+%            \item technical support (software development environment maintenance, build management)
+%            \item replacement person for CTA.
+%            \item team leader of the support team
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{2004--2004}{MoVerON}{Brandenburg University of Technology}{Cottbus}{8 months}{Web application for universities for modular management of courses.%
- \begin{itemize}
-  \item Technologies: PHP, HTML, Sybase 
-  \item Activities \& roles 
-  \begin{itemize}
-   \item project designer \& project leader
-   \item technical support
-   \item integration with IT infrastructure of BTU
-  \end{itemize}
- \end{itemize}
+\cventry{2004 -- 2004}{MoVerON}{Brandenburg University of Technology}{Cottbus}{8 months}{Web application for universities for modular management of courses.%
+%    \begin{itemize}
+%        \item Technologies: PHP, HTML, Sybase 
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item project designer \& project leader
+%            \item technical support
+%            \item integration with IT infrastructure of BTU
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{2002--2004}{LehVIS}{Brandenburg University of Technology}{Cottbus}{19 months}{System for management of students' participation in university activities (courses, exercises, laboratories).%
- \begin{itemize}
-  \item Technologies: PHP, HTML, Sybase 
-  \item Activities \& roles 
-  \begin{itemize}
-   \item project designer \& project leader
-   \item technical support
-   \item integration with IT infrastructure of BTU
-  \end{itemize}
- \end{itemize}
+\cventry{2002 -- 2004}{LehVIS}{Brandenburg University of Technology}{Cottbus}{19 months}{System for management of students' participation in university activities (courses, exercises, laboratories).%
+%    \begin{itemize}
+%        \item Technologies: PHP, HTML, Sybase 
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item project designer \& project leader
+%            \item technical support
+%            \item integration with IT infrastructure of BTU
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{2001--2001}{Winiary.pl, Siemens.pl, Nestle.pl}{Internet Designers}{Wroclaw}{4 months}{Web applications based on CMS%
- \begin{itemize}
-  \item Technologies: APS, CMS, MS SQL Server, HTML
-  \item Activities \& roles 
-  \begin{itemize}
-   \item ASP developer
-  \end{itemize}
- \end{itemize}
+\cventry{2001 -- 2001}{***}{Internet Designers}{Wroclaw}{4 months}{Web applications based on CMS%
+%    \begin{itemize}
+%        \item Technologies: APS, CMS, MS SQL Server, HTML
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item ASP developer
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{2001--2001}{IDCMS}{Internet Designers}{Wroclaw}{1 month}{Core system for web applications%
- \begin{itemize}
-  \item Technologies: Java, Servlets, JSP, XML
-  \item Activities \& roles 
-  \begin{itemize}
-   \item software developer
-  \end{itemize}
- \end{itemize}
+\cventry{2001 -- 2001}{IDCMS}{Internet Designers}{Wroclaw}{1 month}{Core system for web applications%
+%    \begin{itemize}
+%        \item Technologies: Java, Servlets, JSP, XML
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item software developer
+%        \end{itemize}
+%    \end{itemize}
 }
+
+\subsection{Open source projects}
+
+\cventry{since 2013}{Apache ServiceMix}{The Apache Software Foundation}{}{}{Flexible, open-source integration container that unifies the features and functionality of Apache ActiveMQ, Camel, CXF, and Karaf into a powerful runtime platform. It provides a complete, enterprise ready ESB exclusively powered by OSGi.}
+
+\cventry{since 2013}{Open Application Standard Platform}{Capgemini Polska}{}{}{Ssolution to building business applications which combine best-in-class frameworks and libraries as well as industry proven practices and code conventions. It provides a complete reference implementation and IDE for your well architected, robust and modern web application.}
 
 \subsection{Student projects}
 
-\cventry{2000--2001}{SDE Solver}{Wroclaw University of Technology}{Wroclaw}{6 months}{System for solving and analysis of stochastic differential equations.%
- \begin{itemize}
-  \item Technologies: C++, C++ Builder
-  \item Activities \& roles 
-  \begin{itemize}
-   \item software designer and developer
-  \end{itemize}
- \end{itemize}
+\cventry{2000 -- 2001}{SDE Solver}{Wroclaw University of Technology}{Wroclaw}{6 months}{System for solving and analysis of stochastic differential equations.%
+%    \begin{itemize}
+%        \item Technologies: C++, C++ Builder
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item software designer and developer
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{2000--2001}{MiETEX}{Wroclaw University of Technology}{Wroclaw}{6 months}{Web application for operating of measure units in laboratory.%
- \begin{itemize}
-  \item Technologies: C++, JAVA, CORBA, CGI
-  \item Activities \& roles 
-  \begin{itemize}
-   \item design and development of client/server communication with CORBA
-   \item technical support
-  \end{itemize}
- \end{itemize}
+\cventry{2000 -- 2001}{MiETEX}{Wroclaw University of Technology}{Wroclaw}{6 months}{Web application for operating of measure units in laboratory.%
+%    \begin{itemize}
+%        \item Technologies: C++, JAVA, CORBA, CGI
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item design and development of client/server communication with CORBA
+%            \item technical support
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{2000--2000}{El Trader}{Wroclaw University of Technology}{Wroclaw}{4 months}{System for risk management on energy market.%
- \begin{itemize}
-  \item Technologies: C++, C++ Builder
-  \item Activities \& roles 
-  \begin{itemize}
-   \item software designer and developer
-  \end{itemize}
- \end{itemize}
+\cventry{2000 -- 2000}{El Trader}{Wroclaw University of Technology}{Wroclaw}{4 months}{System for risk management on energy market.%
+%    \begin{itemize}
+%        \item Technologies: C++, C++ Builder
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item software designer and developer
+%        \end{itemize}
+%    \end{itemize}
 }
 
-\cventry{1999--2001}{Stock Market Simulator}{Wroclaw University of Technology}{Wroclaw}{22 months}{System simulating functionality of the Stock Market. The system enables other users to play on the Market with the help of client application.%
- \begin{itemize}
-  \item Technologies: C++, C++ Builder, CORBA
-  \item Activities \& roles 
-  \begin{itemize}
-   \item software technical designer and developer
-   \item design and development of client/server communication with CORBA
-  \end{itemize}
- \end{itemize}
+\cventry{1999 -- 2001}{Stock Market Simulator}{Wroclaw University of Technology}{Wroclaw}{22 months}{System simulating functionality of the Stock Market. The system enables other users to play on the Market with the help of client application.%
+%    \begin{itemize}
+%        \item Technologies: C++, C++ Builder, CORBA
+%        \item Activities \& roles 
+%        \begin{itemize}
+%            \item software technical designer and developer
+%            \item design and development of client/server communication with CORBA
+%        \end{itemize}
+%    \end{itemize}
 }
 
 
-\section{Education}
-\cventry{1996--2001}{M.Sc}{Wroclaw University of Technology}{Wroclaw}{Applied Mathematics}{%
-Study areas: 
-  \begin{itemize}
-    \item Theoretical Mathematics
-    \item Mathematical Aspects of Computer Science
-    \item Mathematical Statistics
-    \item Financial and Actuarial Mathematics  
-   \end{itemize}
-Research area: numerical methods in stochastic differential equations and stochastic optimal control
-Master thesis: \emph{Computer Approximation of the Stochastic Differential Equations with Respect to Semimartingales with Examples of theirs Applications}}  % arguments 3 to 6 can be left empty
-\cventry{1992--1996}{Secondary school}{I Liceum Ogólnokształcące}{Milicz}{}{}
-\cventry{1984--1992}{Primary school}{Szkoła Podstawowa im. Stanislawa Ratajczaka}{Szkaradowo}{}{}
+\filbreak
+\section{Professional skills}
+{
+%\cvitem{Methods}{UML, component based development, distributed processing, design patterns, object oriented methods}
+\cvitem{JEE standards}{OSGi, JPA, EJB, JSP, JAXB, JAXP, SOAP, JAX-WS, JAX-RS, AOP, JMS, QUASAR}
+\cvitem{JEE frameworks}{Spring (Framework, Boot, Data, Security, Cloud), AspectJ, Hibernate}
+\cvitem{Integr. frameworks \& ESB}{Apache~CXF, Apache~ActiveMQ, , Apache~Camel, Apache~ServiceMix, JBoss Fuse/A-MQ, \emph{Apache~Cellar, Fuse~Fabric, Fabric8, Mule~ESB, Oracle Service Bus} }
+\cvitem{App. servers}{Oracle WebLogic, JBoss~AS, Wildfly, JBoss EAP, Tomcat, Jetty, Apache~Karaf}
+\cvitem{Progr.\ languages}{Java, C++, Bash, \emph{Groovy, Scala, Java Script}}
+\cvitem{Op. systems}{LINUX (Debian, Ubuntu), MS~Windows}
+\cvitem{Databases}{Oracle DB 10g/11g/12g, MySQL, \emph{PostgreSQL}}
+\cvitem{XaaS}{Vagrant, Docker, Virtual~Box, Amazon~EC2, \emph{Kubernetes, OpenShift, Fabric8}}
+\cvitem{ALM}{Git, SVN, CVS, Maven, ANT, Hudson/Jenkins, Artifactory, Nexus}
+\cvitem{Dev. tools}{Eclipse, InteliJ, SQL~Developer}
+\cvitem{Doc. prep.}{\LaTeX, Markdown, Asciidoc(tor), DocBook, Libre~Office, MS~Office, Scribus, Vim, Atom}
+\cvitem{Scientific apps}{Matlab, Scilab, Maple, Octave}
+%\cvitem{MDA}{EMF, Xtext}
+%\cvitem{Other APIs \& libraries}{JTAPI (GJTAPI), j-Interop, FOP, J2ME Web Services (JSR-172), Handheld programming}
+%\cvitem{Graph. tools}{Gimp, Inkscape, Karbon, Blender}
+%\cvitem{Web hosting}{Parallels Plesk Panel, Drupal, Joomla, Wordpress}
+}
 
-%\section{Master thesis}
-%\cvitem{title}{\emph{Computer Approximation of Stochastic Differential Equations with Respect to Semimartingales with examples of theirs Applications}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
+\section{Honors \& Awards}
+\cventry{06/1996}{Lucja Skibinska Scholarship}{I Liceum Ogólnokształcące im. Armii Krajowej}{Milicz}{}{}{}
 
+\filbreak
 \section{Languages}
 \cvitemwithcomment{Polish}{mother tongue}{}
 \cvitemwithcomment{English}{intermediate}{}
 \cvitemwithcomment{German}{advanced}{}
 
-\section{Professional skills}
-{\small
-\cvitem{Methods}{UML, component based development, distributed processing, design patterns, object oriented methods}
-\cvitem{Progr. lang.}{Java, C++, C\#, Groovy, PHP, Bash, WLS}
-\cvitem{JEE standards \& frameworks}{Spring, OSGi, Hibernate, JPA, EJB, JSF, JSP, XSD, JAXB, JAXP, SOAP, JAX-WS, WSDL, JAX-WS~RI, Apache~CXF, Apache~Axis2, JAX-RS,  WebStart, AOP, AspectJ, JMS, Apache~ActiveMQ, QUASAR}
-\cvitem{Dev. tools}{Eclipse, Netbeans, Visual~Studio.NET, Monodeveloper, QT-Linguist, SQL~Developer}
-\cvitem{Databases}{Oracle DB 10g/11g, MySQL, PostgreSQL}
-\cvitem{Appl.\& web servers}{Oracle WebLogic, JBoss~AS, Tomcat, Jetty, Apache~Karaf, Apache~ServiceMix, FuseESB, Eclipse~Virgo, Apache~HTTP~Server}
-\cvitem{ESB \& SOA}{Apache~ServiceMix, FuseESB, Apache~Cellar, Fuse~Fabric, Apache~Camel, Mule~ESB, Oracle Service Bus}
-\cvitem{MDA}{EMF, Xtext}
-\cvitem{ALM}{Git, SVN, CVS, Maven, ANT, Sonatype~Tycho, Hudson/Jenkins, Artifactory, Nexus, CruiseControl}
-\cvitem{Op. systems}{LINUX (Debian, Ubuntu, Redhat), UNIX, MS~Windows}
-\cvitem{Other APIs \& libraries}{JTAPI (GJTAPI), j-Interop, FOP, J2ME Web Services (JSR-172), Handheld programming}
-\cvitem{Doc. prep.}{Vim, \LaTeX, DocBook, Libre~Office, MS~Office, Scribus}
-\cvitem{Graph. tools}{Gimp, Inkscape, Karbon, Blender}
-\cvitem{Vrit. \& cloud}{Virtual~Box, Amazon~EC2, CloudFoundry}
-\cvitem{Web hosting}{Parallels Plesk Panel, Drupal, Joomla, Wordpress}
-\cvitem{Scientific apps}{Matlab, Scilab, Maple, Octave}
-}
-
-
-
 \section{Hobbies \& interests}
 \cvlistitem{Mountains}
 \cvlistitem{Gothic rock music \& Gothic culture}
 \cvlistitem{Rowing}
-\cvlistitem{Programming for Children - Scratch, Alice}
+\cvlistitem{Teaching children programming and robotics}
+
 % 
 % 
 % \section{Extra 1}

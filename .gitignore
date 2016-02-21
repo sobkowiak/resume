@@ -4,3 +4,4 @@ target/
 *.dvi
 *.pdf
 *.out
+*.synctex.gz
